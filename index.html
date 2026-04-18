@@ -15,19 +15,47 @@
       background-color: #ffffff;
     }
 
+    /* ===== ENCABEZADO ===== */
+    header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #ddd;
+      background-color: #ffffff;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    /* ===== IFRAME ===== */
     iframe {
       border: none;
       width: 100%;
-      height: 100%;
+      height: calc(100% - 82px); /* resta la altura aproximada del header */
     }
   </style>
 </head>
+
 <body>
-  
-<iframe 
-  src="https://lookerstudio.google.com/embed/reporting/10b173b5-7012-4ae2-bd46-490e38921561/page/zhvuF"
-  allowfullscreen>
-</iframe>
+
+  <header>
+    <img src="assets/Imagen1.png" alt="Logo 1">
+    <img src="assets/unex logo.png" alt="Logo UNEX">
+    <h1>Título del informe</h1>
+  </header>
+
+  <iframe
+    src="https://lookerstudio.google.com/embed/reporting/10b173b5-7012-4ae2-bd46-490e38921561/page/zhvuF"
+    allowfullscreen>
+  </iframe>
 
 </body>
 </html>
